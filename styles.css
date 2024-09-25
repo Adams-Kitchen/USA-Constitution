@@ -1,0 +1,200 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: url('CONSTITUTION_iStock-923052552_2500\ copy.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 40, 104, 0.9); /* Softened color with more transparency */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #bf0a30;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(191, 10, 48, 0.8); /* Slight transparency */
+    border-top: 4px solid white;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffcccb; /* Lighter hover effect */
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.85); /* Slight transparency for soft background */
+    border-left: 5px solid rgba(0, 40, 104, 0.9); /* Softened borders */
+    border-right: 5px solid rgba(191, 10, 48, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 10px; /* Rounded corners for smoother look */
+}
+
+h2 {
+    color: rgba(0, 40, 104, 0.9); /* Softer blue */
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: rgba(0, 40, 104, 0.9);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 4px solid rgba(191, 10, 48, 0.8);
+}
+
+button, .dropdown-btn {
+    background-color: rgba(0, 40, 104, 0.9);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .dropdown-btn:hover {
+    background-color: rgba(191, 10, 48, 0.8);
+}
+
+.dropdown-content {
+    padding: 15px;
+    background-color: rgba(245, 245, 245, 0.9); /* Lighter, soft background */
+    border-left: 5px solid rgba(191, 10, 48, 0.8);
+    display: none;
+    border-radius: 5px;
+}
+
+ul#billOfRightsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#billOfRightsList li {
+    margin: 10px 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+#fun-facts {
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.85); /* Same soft background */
+    border-left: 5px solid rgba(0, 40, 104, 0.9);
+    border-right: 5px solid rgba(191, 10, 48, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#fun-facts h2 {
+    color: rgba(0, 40, 104, 0.9);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#fun-facts ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
+#fun-facts ul li {
+    margin-bottom: 10px;
+}
+
+/* General button styles */
+.dropdown-btn, .nested-dropdown-btn {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%; /* Full width for buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effects for buttons */
+.dropdown-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover for main buttons */
+}
+
+.nested-dropdown-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover for nested buttons */
+}
+
+/* Styles for main dropdown content */
+.dropdown-content {
+    margin-left: 20px;
+    padding: 10px;
+    border-left: 2px solid #007BFF; /* Add a border for better visibility */
+    background-color: rgba(240, 240, 240, 0.8); /* Light background */
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+}
+
+/* Styles for nested dropdown content */
+.nested-dropdown-content {
+    margin-left: 40px; /* Indent for nested dropdowns */
+    padding: 10px;
+    border-left: 2px solid #FFD700; /* Gold color for nested dropdowns */
+    background-color: rgba(255, 255, 224, 0.9); /* Light yellow background for nested dropdowns */
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Additional hover effect for nested dropdowns */
+.nested-dropdown-content p:hover {
+    background-color: rgba(255, 255, 204, 0.8); /* Slightly darker yellow on hover for text */
+}

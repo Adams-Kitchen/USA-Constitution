@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The United States Constitution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Great Vibes'; text-transform:lowercase ; text-transform: capitalize; font-size: 50;" >The United States Constitution</h1>
+        <nav>
+            <ul>
+                <li><a href="#preamble">Preamble</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#amendments">Amendments</a></li>
+                <li><a href="#fun-facts">Fun Facts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="preamble">
+        <h2>Preamble</h2>
+        <p>
+            We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.
+        </p>
+    </section>
+
+    <section id="articles">
+        <h2>Articles of the Constitution</h2>
+        <p>The Constitution is built on seven foundational articles that define the framework of the U.S. government.</p>
+
+        <!-- Article I -->
+        <button class="dropdown-btn" onclick="toggleDropdown('article1')">Article I - The Legislative Branch</button>
+        <div id="article1" class="dropdown-content" style="display: none;">
+            <p>Article I establishes the legislative branch, consisting of the Senate and House of Representatives, collectively known as Congress. Congress is responsible for creating laws, levying taxes, declaring war, and regulating commerce. It also grants Congress the necessary and proper powers to carry out its duties, making it a central pillar of federal governance.</p>
+        </div>
+
+        <!-- Article II -->
+        <button class="dropdown-btn" onclick="toggleDropdown('article2')">Article II - The Executive Branch</button>
+        <div id="article2" class="dropdown-content" style="display: none;">
+            <p>Article II establishes the executive branch, which is headed by the President of the United States. It defines the President's powers, including the ability to veto legislation, command the military, and conduct foreign policy. The article also outlines the procedures for election, qualifications, and removal from office.</p>
+        </div>
+
+        <!-- Article III -->
+        <button class="dropdown-btn" onclick="toggleDropdown('article3')">Article III - The Judicial Branch</button>
+        <div id="article3" class="dropdown-content" style="display: none;">
+            <p>Article III establishes the judicial branch, including the Supreme Court and other inferior courts that Congress may create. The judicial branch is tasked with interpreting the laws and ensuring they are applied constitutionally. It grants lifetime appointments to judges, ensuring the judiciary remains independent of political pressures.</p>
+        </div>
+
+        <!-- Article IV -->
+        <button class="dropdown-btn" onclick="toggleDropdown('article4')">Article IV - The States</button>
+        <div id="article4" class="dropdown-content" style="display: none;">
+            <p>Article IV outlines the relationship between the states and the federal government. It requires states to give "full faith and credit" to the laws and judicial decisions of other states, ensures citizens have equal rights across states, and provides for the admission of new states.</p>
+        </div>
+
+        <!-- Article V -->
+        <button class="dropdown-btn" onclick="toggleDropdown('article5')">Article V - Amendments</button>
+        <div id="article5" class="dropdown-content" style="display: none;">
+            <p>Article V describes the process for amending the Constitution. Amendments can be proposed either by a two-thirds majority in both houses of Congress or by a convention called for by two-thirds of state legislatures. Ratification requires approval from three-fourths of the states.</p>
+        </div>
+
+        <!-- Article VI -->
+        <button class="dropdown-btn" onclick="toggleDropdown('article6')">Article VI - The Supremacy Clause</button>
+        <div id="article6" class="dropdown-content" style="display: none;">
+            <p>Article VI establishes the Constitution, federal laws, and treaties as the "supreme law of the land," overriding conflicting state laws. It also requires federal and state officials to swear an oath to uphold the Constitution, but it prohibits any religious tests for holding public office.</p>
+        </div>
+
+        <!-- Article VII -->
+        <button class="dropdown-btn" onclick="toggleDropdown('article7')">Article VII - Ratification</button>
+        <div id="article7" class="dropdown-content" style="display: none;">
+            <p>Article VII outlines the procedure for ratification of the Constitution, stating that it would take effect once nine of the original thirteen states had ratified it. This article played a key role in the founding of the United States under a single, unified Constitution.</p>
+        </div>
+    </section>
+
+    <section id="amendments">
+        <h2>Amendments</h2>
+        <p>
+            The Constitution has 27 amendments. The first 10 are known as the Bill of Rights.
+        </p>
+    
+        <!-- Bill of Rights Dropdown -->
+        <button class="dropdown-btn" onclick="toggleDropdown('billOfRights')">Show Bill of Rights</button>
+        <div id="billOfRights" class="dropdown-content" style="display: none;">
+            <ul>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('firstAmendment')">1st Amendment - Freedom of Speech</button>
+                    <div id="firstAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The First Amendment protects the rights to free speech, press, assembly, and religion. It prohibits Congress from making laws that infringe upon these freedoms.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('secondAmendment')">2nd Amendment - Right to Bear Arms</button>
+                    <div id="secondAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The Second Amendment protects the right of the people to keep and bear arms, emphasizing the importance of a well-regulated militia.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('thirdAmendment')">3rd Amendment - Quartering of Soldiers</button>
+                    <div id="thirdAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The Third Amendment prohibits the quartering of soldiers in private homes without the owner's consent, reflecting the colonial experience under British rule.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('fourthAmendment')">4th Amendment - Search and Seizure</button>
+                    <div id="fourthAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The Fourth Amendment protects citizens from unreasonable searches and seizures, establishing the need for warrants based on probable cause.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('fifthAmendment')">5th Amendment - Rights of the Accused</button>
+                    <div id="fifthAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The Fifth Amendment guarantees the right to due process, protection against self-incrimination, and prohibits double jeopardy.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('sixthAmendment')">6th Amendment - Right to a Fair Trial</button>
+                    <div id="sixthAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The Sixth Amendment ensures the right to a speedy and public trial, an impartial jury, and legal representation for the accused.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('seventhAmendment')">7th Amendment - Civil Trials</button>
+                    <div id="seventhAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The Seventh Amendment guarantees the right to a jury trial in civil cases where the value in controversy exceeds twenty dollars.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('eighthAmendment')">8th Amendment - Bail and Punishments</button>
+                    <div id="eighthAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The Eighth Amendment prohibits excessive bail, excessive fines, and cruel and unusual punishments.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('ninthAmendment')">9th Amendment - Rights Retained by the People</button>
+                    <div id="ninthAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The Ninth Amendment states that the enumeration of certain rights in the Constitution does not deny or disparage others retained by the people.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="nested-dropdown-btn" onclick="toggleDropdown('tenthAmendment')">10th Amendment - Powers Reserved to the States</button>
+                    <div id="tenthAmendment" class="nested-dropdown-content" style="display: none;">
+                        <p>The Tenth Amendment reserves powers not delegated to the federal government to the states or the people.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Rest of the Amendments Dropdown -->
+        <button class="dropdown-btn" onclick="toggleDropdown('restOfAmendments')">Show Amendments 11-27</button>
+        <div id="restOfAmendments" class="dropdown-content" style="display: none;">
+        <ul>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('eleventhAmendment')">11th Amendment - Limits on Lawsuits Against States</button>
+                <div id="eleventhAmendment" class="nested-dropdown-content" style="display: none;">
+                    <p>The Eleventh Amendment provides immunity to states from being sued in federal court by citizens of another state or by foreign nationals.</p>
+                </div>
+            </li>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('twelfthAmendment')">12th Amendment - Presidential Election Procedures</button>
+                <div id="twelfthAmendment" class="nested-dropdown-content" style="display: none;">
+                    <p>The Twelfth Amendment outlines the process for electing the President and Vice President, ensuring that they are elected together.</p>
+                </div>
+            </li>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('thirteenthAmendment')">13th Amendment - Abolition of Slavery</button>
+                <div id="thirteenthAmendment" class="nested-dropdown-content" style="display: none;">
+                    <p>The Thirteenth Amendment abolished slavery and involuntary servitude, except as punishment for a crime.</p>
+                </div>
+            </li>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('fourteenthAmendment')">14th Amendment - Citizenship Rights</button>
+                <div id="fourteenthAmendment" class="nested-dropdown-content" style="display: none;">
+                    <p>The Fourteenth Amendment grants citizenship to all persons born or naturalized in the U.S. and guarantees equal protection under the law.</p>
+                </div>
+            </li>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('fifteenthAmendment')">15th Amendment - Right to Vote</button>
+                <div id="fifteenthAmendment" class="nested-dropdown-content" style="display: none;">
+                    <p>The Fifteenth Amendment prohibits the federal and state governments from denying a citizen the right to vote based on "race, color, or previous condition of servitude."</p>
+                </div>
+            </li>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('sixteenthAmendment')">16th Amendment - Income Tax</button>
+                <div id="sixteenthAmendment" class="nested-dropdown-content" style="display: none;">
+                    <p>The Sixteenth Amendment allows Congress to levy an income tax without apportioning it among the states based on population.</p>
+                </div>
+            </li>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('seventeenthAmendment')">17th Amendment - Direct Election of Senators</button>
+                <div id="seventeenthAmendment" class="nested-dropdown-content" style="display: none;">
+                    <p>The Seventeenth Amendment establishes the direct election of U.S. Senators by popular vote.</p>
+                </div>
+            </li>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('eighteenthAmendment')">18th Amendment - Prohibition</button>
+                <div id="eighteenthAmendment" class="nested-dropdown-content" style="display: none;">
+                    <p>The Eighteenth Amendment prohibited the manufacture, sale, and transportation of alcoholic beverages, leading to the Prohibition era.</p>
+                </div>
+            </li>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('nineteenthAmendment')">19th Amendment - Women's Suffrage</button>
+                <div id="nineteenthAmendment" class="nested-dropdown-content" style="display: none;">
+                    <p>The Nineteenth Amendment grants women the right to vote, marking a significant milestone in the women's suffrage movement.</p>
+                </div>
+            </li>
+            <li>
+                <button class="nested-dropdown-btn" onclick="toggleDropdown('twentiethAmendment')">20th Amendment - Terms of Office</button>
+            </li>
+    </section>
+
+    <section id="fun-facts">
+        <h2>Fun Facts About the U.S. Constitution</h2>
+        <ul>
+            <li>The U.S. Constitution is the shortest written constitution of any major government in the world.</li>
+            <li>At 4,543 words, including the signatures, the Constitution is one of the shortest documents of its kind.</li>
+            <li>Benjamin Franklin, at 81, was the oldest delegate at the Constitutional Convention.</li>
+            <li>The Constitution was signed on September 17, 1787, but it wasn't ratified until June 21, 1788.</li>
+            <li>George Washington and James Madison were the only two future U.S. Presidents to sign the Constitution.</li>
+            <li>The original document is displayed at the National Archives in Washington, D.C.</li>
+            <li>The Constitution has only been amended 27 times in over 230 years.</li>
+            <li>The Bill of Rights, the first ten amendments, was not originally part of the Constitution. It was added in 1791.</li>
+            <li>Rhode Island was the only state that refused to send delegates to the Constitutional Convention.</li>
+            <li>The 27th Amendment, which deals with congressional pay raises, was proposed in 1789 but wasn't ratified until 1992!</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Constitution Info</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
